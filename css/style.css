@@ -95,8 +95,7 @@ span{
     color: #007fff;
 }
 footer{
-    height: 150px;
-    position: sticky;
+    
 }
 
 #social-networks{
@@ -108,8 +107,7 @@ footer{
 }
 #social-networks i {
     font-size: 160%;
-    margin: 1%;
-    padding: 5%;
+    margin-left: 120px;
     color: #007fff;
     list-style: none;
 }
