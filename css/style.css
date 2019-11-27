@@ -31,7 +31,7 @@ h1{
 p {
     padding-bottom: 0px;
     
-    color: #ffe119;
+    color: #007fff;
     font-size: 18px;
     padding-left: 10px;
     text-shadow: .5px .10px 20px #007fff;
@@ -47,7 +47,6 @@ a h2{
 h2{
     font-family: Oswald;
     font-size: 15px;
-    font-weight: 1000;
     border-radius: 10px;
     padding: 12px 46px 12px 46px;
     border: 1px solid #292727;
@@ -56,9 +55,10 @@ h2{
     
 
 }
- ul li a:hover{
+ ul li a h2:hover{
 	transform: rotate(0deg) skew(0deg) translate(10px, -10px);
   	box-shadow: -50px, 50px 50px rgba(0,0,0,0.5);
+    color: #fff;
 }
 strong{
     color: #007fff;
@@ -71,9 +71,9 @@ strong{
     padding-left: 10px;
 }
 #body-overlay{
-    border-radius: 28px;
-    padding-left: 10px;
+    border-radius: 10px;
     text-align: center;
+
 }
 #body-overlay strong{
     color: #007fff;
@@ -96,6 +96,7 @@ span{
 }
 footer{
     height: 150px;
+    position: sticky;
 }
 
 #social-networks{
@@ -112,6 +113,11 @@ footer{
     color: #007fff;
     list-style: none;
 }
+#social-networks li a i:hover{
+	transform: rotate(-10deg) skew(0deg) translate(20px, -10px);
+  	box-shadow: -50px, 50px 50px rgba(0,0,0,0.5);
+    color: #fff;
+}
 
   /*=================================*Video Wrappers*========================================*/
  .videowrapper{
@@ -119,6 +125,7 @@ footer{
     padding-bottom: 56.25%;
     padding-top: 0px;
     height: 0px;
+   
     }
 
 .videowrapper video{
@@ -131,7 +138,7 @@ footer{
     width: auto;
     height: auto;
     z-index: -1;
-}
+    }
 /*=================================*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Media Queries  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*========================================*/
 @media (max-width:767px) {
     html{
