@@ -1,34 +1,212 @@
-   body {
-            padding: 0 20px;
-        }
-        
-        .container {
-            background-color: #f5f5f5;
-        }
-        .header {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .grid .row {
-            background-color: #e8e8e8;
-            margin-bottom: 10px;
-            min-height: 60px;
-        }
-        .grid .grid-element {
-            padding: 10px;
-            background-color: #444;
-            color: white;
-            text-align: center;
-            min-height: 40px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .grid .controls {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-        }
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Oswald');
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
 
-        .color{
-         background: #46cb18;
-        }
+body{
+    font-family: 'Oswald' Lato;
+    color:#777777;
+   
+}
+/*=================================*Header Section*========================================*/
+
+.navbar {
+   
+    padding-top: 10px;
+}
+.navbar-brand {
+        text-align: center;
+}
+
+/*=================================*Body Section*========================================*/
+
+.body-overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+}
+h1{
+    
+    font-size: 500%;
+    color: #3cb44b;
+    text-transform: uppercase;
+
+    text-align: left;
+    padding-left: 80px;
+
+}
+h2{
+    color: #000075;
+    background-color: #3cb44b;
+    font-size: 15px;
+    font-weight: 1000;
+    border-radius: 28px;
+    padding: 12px 46px 12px 46px;
+}
+
+
+#body-text {
+    padding: 10px;
+    color: #ffe119;
+    font-size: 18px;
+    padding-left: 80px;
+    text-shadow: .5px .5px 10px #3cb44b;
+
+
+}
+#body-text a{
+    font-size: 70px;
+    font-weight: 1000;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 12px 46px 12px 46px;
+    transition: all 0.4s;
+    background-color: #3cb44b;
+    color: #000075;
+    letter-spacing: 10px;
+}
+
+
+
+strong{
+    color: #3cb44b;
+    background-color: rgba(0, 0, 0, .5);
+    letter-spacing: 15px;
+    font-size: 30px;
+    font-weight: 2000;
+    text-transform: uppercase;
+      border-radius: 28px;
+
+}
+span{
+    color: #ffe119;
+
+}
+  
+/*=================================*Video Wrappers*========================================*/
+
+
+ .videowrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0px;
+    }
+
+.videowrapper video{
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+
+}
+@media (max-width:767px) {
+   
+   html{
+    height: 100%;
+    overflow: hidden;
+   } 
+body{
+    background-image: url(../images/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: -1;
+    }
+    #body-overlay{
+        display: none;
+    }
+    #body-text{
+    padding: 10px;
+    color: #ffe119;
+    font-size: 10px;
+    text-shadow: .5px .5px 10px #3cb44b;
+    position: absolute;
+    bottom: 0px;
+    }
+
+    .videowrapper video{
+        display: none;
+    }
+
+strong{
+    color: #3cb44b;
+    background-color: rgba(0, 0, 0, .5);
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: 2000;
+    text-transform: uppercase;
+
+}
+span{
+    color: #ffe119;
+}
+
+  h2{
+    color: #3cb44b;
+    text-shadow: .5px .5px 10px #3cb44b;
+    background-color: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    h2{
+    color: #3cb44b;
+    font-size: 16px;
+    font-weight: 1500;
+    text-shadow: .5px .5px 10px #3cb44b;
+    background-color: unset;
+    
+}
+   #body-text{
+    padding: 10px;
+    color: #ffe119;
+    font-size: 10px;
+    text-shadow: .5px .5px 10px #3cb44b;
+
+    
+    }
+#body{
+    min-height: 100%;
+    min-width: 1024px;
+    
+  /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+  /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#body-overlay h1{
+    padding: 0;
+    font-size: 300%;
+    bottom: 60px;
+    position: relative;
+}
+#body-text p,a {
+    font-size: 200%;
+    bottom: 60px;
+    position: relative;
+    padding-bottom: 0px;
+
+}
+
+
+}
