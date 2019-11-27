@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico&display=swap&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 *{
     margin:0;
     padding:0;
@@ -20,50 +20,48 @@ body{
 }
 
 /*=================================*Body Section*========================================*/
-
-.body-overlay{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 100px;
-}
 h1{
     font-size: 500%;
-    color: #3cb44b;
+    color: #007fff;
     text-transform: uppercase;
     text-align: left;
     padding-left: 80px;
 }
-h2{
-    font-family: pacifico;
 
-    color: #000075;
-    background-color: #3cb44b;
-    font-size: 15px;
-    font-weight: 1000;
-    border-radius: 28px;
-    padding: 12px 46px 12px 46px;
-}
-#body-text {
-    padding: 10px;
+p {
+    padding-bottom: 0px;
+    
     color: #ffe119;
     font-size: 18px;
-    padding-left: 80px;
-    text-shadow: .5px .5px 10px #3cb44b;
+    padding-left: 10px;
+    text-shadow: .5px .10px 20px #007fff;
 }
 a h2{
-    font-family: pacifico;
-    border-radius: 28px;
+    font-family: Roboto;
     padding: 12px 46px 12px 46px;
     transition: all 0.4s;
-    background-color: #3cb44b;
-    color: black;
-    letter-spacing: 10px;
+    background-color: #007fff;
+    color: #292727;
+    letter-spacing: 2px;
+}
+h2{
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 1000;
+    border-radius: 10px;
+    padding: 12px 46px 12px 46px;
+    border: 1px solid #292727;
+    box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+	transition: 0.15s;
+    
+
+}
+ ul li a:hover{
+	transform: rotate(0deg) skew(0deg) translate(10px, -10px);
+  	box-shadow: -50px, 50px 50px rgba(0,0,0,0.5);
 }
 strong{
-    
-    color: #3cb44b;
+    color: #007fff;
     background-color: rgba(0, 0, 0, .5);
     letter-spacing: 15px;
     font-size: 30px;
@@ -71,15 +69,51 @@ strong{
     text-transform: uppercase;
     border-radius: 28px;
     padding-left: 10px;
-
+}
+#body-overlay{
+    border-radius: 28px;
+    padding-left: 10px;
+    text-align: center;
+}
+#body-overlay strong{
+    color: #007fff;
+    background-color: rgba(0, 0, 0, .5);
+    letter-spacing: 15px;
+    font-size: 30px;
+    font-weight: 2000;
+    text-transform: uppercase;
+    
 }
 span{
     color: #ffe119;
-    font-size: 20px;
-    
+    font-size: 40px;
+    }
+    .social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #007fff;
 }
-  
-/*=================================*Video Wrappers*========================================*/
+footer{
+    height: 150px;
+}
+
+#social-networks{
+    text-align: center;
+}
+
+#social-networks li {
+    display:inline;
+}
+#social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #007fff;
+    list-style: none;
+}
+
+  /*=================================*Video Wrappers*========================================*/
  .videowrapper{
     position: relative;
     padding-bottom: 56.25%;
@@ -116,40 +150,29 @@ body{
     #body-overlay{
         display: none;
     }
-    #body-text{
-    padding: 10px;
-    color: #ffe119;
-    font-size: 10px;
-    text-shadow: .5px .5px 10px #3cb44b;
-    position: absolute;
-    bottom: 0px;
-    }
-
-    .videowrapper video{
+      .videowrapper video{
         display: none;
     }
 
-strong{
-    color: #3cb44b;
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+#body-overlay strong{
+    color: #007fff;
     background-color: rgba(0, 0, 0, .5);
-    letter-spacing: 10px;
-    font-size: 20px;
+    letter-spacing: 15px;
+    font-size: 15px;
     font-weight: 2000;
     text-transform: uppercase;
+    border-radius: 28px;
+    padding-left: 10px;
 
 }
 span{
     color: #ffe119;
+    font-size: 20px;
+    
 }
-
-  a h2{
-    color: #3cb44b;
-    text-shadow: .5px .5px 10px #3cb44b;
-    background-color: unset;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px){
-
    
 }
