@@ -12,18 +12,19 @@ i{
     font-size: 44px;
     color: black;
     text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    
 }
 .navbar a{
     position:absolute;
-	right: 0;
+	left: 0;
     top: 0;
 	display: block;
 	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
+	
+	padding: 24px 16px;
 	text-decoration: none;
 	font-size: 20px;
-    z-index: 1;
+   
 }
 .navbar ul{
 	margin:8px 0 0 0;
@@ -95,7 +96,7 @@ i{
 
 	}
 h1{
-    font-size: 45px;
+    font-size: 240%;
     color: #ffdb00;
     font-weight: 1;
     text-transform: uppercase;
