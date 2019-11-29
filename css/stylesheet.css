@@ -11,6 +11,7 @@ i{
     margin:0px;
     font-size: 44px;
     color: black;
+  
     text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     
 }
@@ -21,7 +22,7 @@ i{
 	display: block;
 	color: #f2f2f2;
 	
-	padding: 24px 16px;
+	padding: 18px 10px;
 	text-decoration: none;
 	font-size: 20px;
    
@@ -31,8 +32,10 @@ i{
 	list-style: none;
 }
 .navbar a:hover{
-	background-color: #EAAA00;
-	color: #fff;
+    
+	background-color: black;
+  
+	
 }
 .side-nav{
 	height: 100%;
@@ -72,21 +75,13 @@ i{
 
  /*=================================*Video Wrappers*========================================*/
  .videowrapper{
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 0px;
-    height: 0px;
+     width: 100%;
+   height: 100%;
        }
 .videowrapper video{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
+   width: 100%;
+   height: 100%;
+
     }
 /*            ===========       Heading Styles   ====================   */
 #main {
@@ -96,12 +91,12 @@ i{
 
 	}
 h1{
-    font-size: 240%;
-    color: #ffdb00;
-    font-weight: 1;
+   
+     text-shadow: .5px .10px 20px #007fff;
+    
     text-transform: uppercase;
     text-align: center;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  
     margin-top: 20px;
     letter-spacing: 8;
     word-spacing: 3;
@@ -109,23 +104,12 @@ h1{
     padding-left: 0px;
 }
 #bg{
-background-color: #050f2c;
 padding-left: 12px;
 padding-right: 12px;
-border: 1px solid #EAAA00;
-border-radius: 28px;
-
 }
 mark{
-   
-   
-   
-    color: #EAAA00;
-    background-color: unset;
-    font-size:19px;
-    font-weight: 1;  
-  
-}
+    background-color: unset;    
+  }
 /* -------------------------Footer----------------------------------*/
 .body-overlay{
     text-align: center;
@@ -133,9 +117,7 @@ mark{
 p {
     padding-bottom: 0px;
     text-align: center;
-    color: #EAAA00;
     font-size: 18px;
-    
     text-shadow: .5px .10px 20px #007fff;
 }
 footer{
@@ -153,7 +135,7 @@ footer{
      font-size: 160%;
     margin: 1%;
     padding: 1%;
-    color: #EAAA00;
+     text-shadow: .5px .10px 20px #007fff;
     list-style: none;
 }
 #social-networks li a i:hover{
@@ -175,3 +157,46 @@ footer{
         display:none;
     }
 }
+/*-------------------------I-pad Media Queries---------------------*/
+@media (max-width:768px) and (max-width:1024px){
+     body{
+        background-image: url(../images/bkg-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+         z-index: -1;
+    }
+    .videowrapper{
+        display:none;
+    }
+}
+    @media only screen and (min-device-width: 1024px) and
+   (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and
+    (orientation: landscape)  {
+ body{
+        background-image: url(../images/bkg-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+         z-index: -1;
+    }
+    .videowrapper{
+        display:none;
+    }
+    }
+
+    /* Portrait*/
+    @media only screen and (min-device-width: 1024px) and 
+    (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and 
+    (orientation: portrait)  {
+ body{
+        background-image: url(../images/bkg-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+         z-index: -1;
+    }
+    .videowrapper{
+        display:none;
+    }
+    }
